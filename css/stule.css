@@ -752,12 +752,18 @@ color: #ffffff;
     .button-menu-header{
      display: none;
     }
+    .container-media{
+        max-width: 2000px;
+    }
     
    }
    @media screen and (min-width:768px ) and (max-width:1158px ){
         .menu-adres{
             flex-direction: column;
             gap: 12px;
+        }
+        .container-media{
+            max-width: 1158px;
         }
         .advantages-list{
             width: 356px;
@@ -786,10 +792,39 @@ color: #ffffff;
             width: 356px;
             row-gap: 72px;
         }
+        .container-footer{
+            flex-wrap: wrap;
+            padding-left: 108px;
+            width: 496px;
+        }
+        .div-footer{
+            margin: 0;
+            margin-right: 24px;
+            margin-bottom: 72px;
+        }
+        .div-icons{
+            margin: 0;
+        }
+        .container-media{
+            width: 100%;
+        }
    }
    @media screen and (min-width:320px ) and (max-width:767.98px ){
         .adres {
          display: none;
+        }
+        .model-windows{
+            width: 288px;
+        }
+        .model-windows-div{
+            width: 100%;
+        }
+        .model-button-footer{
+            margin: 0;
+            margin-left: 30px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 169px;
         }
         .menu {
             display: none;
@@ -797,6 +832,8 @@ color: #ffffff;
            .container-media{
             padding-top: 16px;
             padding-bottom: 16px;
+            width: 100%;
+            
            }
            .container-medial{
             display: flex;
@@ -846,6 +883,53 @@ color: #ffffff;
            .p-one{
             height: 72px;
            }
+           .container-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .div-footer{
+            text-align: center;
+            margin: 0;
+           }
+           .logotipe{
+            
+           }
+           .p-tu{
+            width: 288px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 72px;
+           }
+           .div-mobile{
+            width: 320px;
+           }
+           .subscride-form{
+            flex-direction: column;
+            align-items: center;
+           }
+           .footer-paragraf{
+            margin: 0;
+            margin-left: 112px;
+            margin-bottom: 16px;
+            
+           }
+           .footer-menu{
+            padding-right: 56px;
+            padding-left: 56px;
+           }
+           .subscride-paragraf{
+            margin-left: 112px;
+            margin-right: 112px;
+           }
+           .div-icons{
+            margin: 0;
+            margin-bottom: 72px;
+           }
+           .subscride-label{
+            margin-left: 16px;
+            margin-right: 16px;
+           }
     }
     @media screen and (max-width: 320px){
         .adres {
@@ -891,7 +975,7 @@ color: #ffffff;
     justify-content: center;
     background-color: #fff;
     flex-wrap: wrap;
-    width: 100%;
+    width: 320px;
     height: 640px;
    }
    .close-button{
