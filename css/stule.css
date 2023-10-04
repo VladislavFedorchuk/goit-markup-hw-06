@@ -792,6 +792,7 @@ color: #ffffff;
         .por-menu{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
         .por-list{
             width: 356px;
