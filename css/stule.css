@@ -718,7 +718,7 @@ color: #ffffff;
     pointer-events: auto;
 }
 .container-medial{
-    max-width: 100%;
+    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -751,22 +751,17 @@ color: #ffffff;
         padding-right: 15px;
     }
    }
-   @media screen and (min-width:768px ) and (max-width:2000px ){
-    .button-menu-header{
-     display: none;
-    }
-    .container-media{
-        max-width: 2000px;
-    }
-    
-   }
    @media screen and (min-width:768px ) and (max-width:1158px ){
         .menu-adres{
             flex-direction: column;
             gap: 12px;
         }
-        .container-media{
-            max-width: 1158px;
+        .email-adres{
+             font-size: 12px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: 14px; /* 116.667% */
+             letter-spacing: 0.48px;
         }
         .advantages-list{
             width: 356px;
@@ -775,10 +770,6 @@ color: #ffffff;
             display: flex;
             flex-wrap: wrap;
             row-gap: 72px;
-        }
-        .section-tre{
-            padding-right:108px ;
-            padding-left:108px ;
         }
         .human-li {
             width: 264px;
@@ -800,8 +791,7 @@ color: #ffffff;
         }
         .container-footer{
             flex-wrap: wrap;
-            padding-left: 108px;
-            width: 496px;
+            justify-content: center;
         }
         .div-footer{
             margin: 0;
@@ -811,9 +801,34 @@ color: #ffffff;
         .div-icons{
             margin: 0;
         }
-        .container-media{
-            width: 100%;
+        @media only screen and (min-resolution: 196dpi ){
+            .section-one{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx2.jpg);}
         }
+        @media  screen  and (min-width:768px){
+            .section-one{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx1.jpg);}
+            
+        }
+        .section-one{
+            padding: 112px 0;
+        }
+        .p-one{
+
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.32px;
+          }
+          .h-tre-one{
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+           }
    }
    @media screen and (min-width:320px ) and (max-width:767.98px ){
         .adres {
@@ -822,6 +837,7 @@ color: #ffffff;
         .model-windows{
             width: 288px;
         }
+
         .model-windows-div{
             width: 100%;
         }
@@ -832,25 +848,40 @@ color: #ffffff;
             margin-bottom: 24px;
             width: 169px;
         }
+        .p-one{
+
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.32px;
+        }
+        .h-tre-one{
+         font-size: 36px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 40px; /* 111.111% */
+         letter-spacing: 0.72px;
+         text-transform: capitalize;
+        }
+        .h-tu-one{
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+        }
         .menu {
             display: none;
-           }
-           .container-media{
-            padding-top: 16px;
-            padding-bottom: 16px;
-            width: 100%;
-            
            }
            .container-medial{
             display: flex;
             flex-direction: row-reverse;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            margin: 0;
+            margin: 0 auto;
            }
            .h-one{
             margin: 0;
-            margin-bottom: 72px;
            }
            .button{
             margin-bottom: 72px;
@@ -859,7 +890,7 @@ color: #ffffff;
            .section-one{
             padding: 0;
             padding-top: 72px;
-        
+            padding-bottom: 72px;
            }
            .advantages-menu{
             display: flex;
@@ -870,12 +901,10 @@ color: #ffffff;
             width: 288px;
            }
            .team-menu{
-            width: 100%;
-           }
-           .team-menu{
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 72px;
            }
            .human-li{
             width: 264px;
@@ -885,9 +914,6 @@ color: #ffffff;
            }
            .por-list{
             width: 288px;
-           }
-           .p-one{
-            height: 72px;
            }
            .container-footer{
             display: flex;
@@ -933,6 +959,14 @@ color: #ffffff;
             margin-left: 16px;
             margin-right: 16px;
            }
+           @media  screen and (min-width:320px){
+            .section-one{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx1.jpg);}
+        }
+        @media only screen and (min-resolution: 196dpi ){
+            .section-one{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx2.jpg);}
+        }
     }
     @media screen and (max-width: 320px){
         .adres {
@@ -942,6 +976,8 @@ color: #ffffff;
                display: none;
               }
     }
+   
+    
     @media screen and (min-width:320px ) and (max-width:1157.98px){
      .advantages-icons{
         display: none;
@@ -949,11 +985,9 @@ color: #ffffff;
      .advantages-section{
         width: 100%;
      }
-     .section-one{
-        width: 100%;
-     }
      .header{
-        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
      }
     }
     @media screen and (max-width:320px ){
@@ -1087,4 +1121,10 @@ color: #ffffff;
    .email-adresat :focus{
     color: #4D5AE5;
    }
-   @media only screen and (min-resolution: 96dpi )
+   .h-tre-ones{
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 24px; /* 120% */
+       letter-spacing: 0.4px;
+   }
