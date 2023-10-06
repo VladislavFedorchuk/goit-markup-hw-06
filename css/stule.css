@@ -179,6 +179,7 @@
     list-style: none;
     margin: 0px;
     text-align: center;
+    margin-bottom: 8px;
 }
 .section-tre{
     background-color: #F4F4FD;
@@ -756,6 +757,9 @@ color: #ffffff;
             flex-direction: column;
             gap: 12px;
         }
+        .button-header{
+            display: none;
+        }
         .email-adres{
              font-size: 12px;
              font-style: normal;
@@ -801,15 +805,9 @@ color: #ffffff;
         .div-icons{
             margin: 0;
         }
-        @media only screen and (min-resolution: 196dpi ){
+       
             .section-one{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx2.jpg);}
-        }
-        @media  screen  and (min-width:768px){
-            .section-one{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx1.jpg);}
-            
-        }
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx1.jpg); min-width: 768px;}
         .section-one{
             padding: 112px 0;
         }
@@ -830,6 +828,11 @@ color: #ffffff;
             text-transform: capitalize;
            }
    }
+   @media only screen and (min-resolution: 196dpi ){
+    .section-one{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgDark-bgx2.jpg);}
+    
+}
    @media screen and (min-width:320px ) and (max-width:767.98px ){
         .adres {
          display: none;
@@ -863,6 +866,7 @@ color: #ffffff;
          line-height: 40px; /* 111.111% */
          letter-spacing: 0.72px;
          text-transform: capitalize;
+         text-align: center;
         }
         .h-tu-one{
             font-size: 36px;
@@ -882,9 +886,14 @@ color: #ffffff;
            }
            .h-one{
             margin: 0;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
            }
            .button{
-            margin-bottom: 72px;
             margin-top: 72px;
            }
            .section-one{
@@ -959,15 +968,15 @@ color: #ffffff;
             margin-left: 16px;
             margin-right: 16px;
            }
-           @media  screen and (min-width:320px){
+           
             .section-one{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx1.jpg);}
-        }
-        @media only screen and (min-resolution: 196dpi ){
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx1.jpg); max-width: 320px;}
+            
+    }
+    @media only screen and (min-resolution: 192dpi ){
             .section-one{
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx2.jpg);}
         }
-    }
     @media screen and (max-width: 320px){
         .adres {
             display: none;
@@ -984,10 +993,6 @@ color: #ffffff;
      }
      .advantages-section{
         width: 100%;
-     }
-     .header{
-        padding-top: 16px;
-        padding-bottom: 16px;
      }
     }
     @media screen and (max-width:320px ){
@@ -1014,11 +1019,12 @@ color: #ffffff;
     flex-wrap: wrap;
     width: 100%;
     height: 640px;
+    padding: 24px;
    }
    .close-button{
     position: relative;
     top: 20px;
-    right: -270px;
+    right: -90%;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -1038,7 +1044,7 @@ color: #ffffff;
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-left: 16px;
+    padding-top: 48px;
    }
    .mob-link-na{
     font-family: Roboto;
@@ -1085,12 +1091,8 @@ color: #ffffff;
    }
    .mob-icons-menu{
     display: flex;
-    justify-content: space-between;
     padding: 0;
-    gap: 24px;
-    margin-left: 16px;
-    margin-bottom: 40px;
-    margin-right: 24px;
+    gap: 40px;
    }
    .button-header{
     background-color: unset;
@@ -1105,6 +1107,7 @@ color: #ffffff;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
     color: #4D5AE5;
+    text-decoration: none;
    }
    .email-adresat{
     font-family: Roboto;
@@ -1114,6 +1117,7 @@ color: #ffffff;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
     color: #434455;
+    text-decoration: none;
    }
    .email-adresat :hover{
     color: #4D5AE5;
