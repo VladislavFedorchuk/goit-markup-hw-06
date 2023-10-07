@@ -95,7 +95,6 @@
     list-style: none;
     padding: 188px 0;
     justify-content: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heero-bc/people-office.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -732,6 +731,11 @@ color: #ffffff;
     margin-left: auto;
     margin-right: auto;
    }
+   @media screen and (min-width: 1158px){
+    .button-header{
+        display: none
+    }
+   }
    @media screen and (min-width: 768px){
     .container-media{
         max-width: 768px;
@@ -751,6 +755,12 @@ color: #ffffff;
         padding-left: 15px;
         padding-right: 15px;
     }
+        .section-one{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-1158/darkbgx1.jpg); }
+     @media only screen and (min-resolution: 192dpi ){
+        .section-one{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-1158/darkbgx2.jpg);}
+    }
    }
    @media screen and (min-width:768px ) and (max-width:1158px ){
         .menu-adres{
@@ -766,6 +776,7 @@ color: #ffffff;
              font-weight: 400;
              line-height: 14px; /* 116.667% */
              letter-spacing: 0.48px;
+             padding: 16px 0;
         }
         .advantages-list{
             width: 356px;
@@ -807,10 +818,16 @@ color: #ffffff;
         }
        
             .section-one{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx1.jpg); min-width: 768px;}
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgx1.jpg); max-width: 768px;}
+            
         .section-one{
             padding: 112px 0;
         }
+       @media only screen and (min-resolution: 192dpi ){
+      .section-one{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgDark-bgx2.jpg);}
+    }
+        
         .p-one{
 
             font-size: 16px;
@@ -828,11 +845,7 @@ color: #ffffff;
             text-transform: capitalize;
            }
    }
-   @media only screen and (min-resolution: 196dpi ){
-    .section-one{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-720/Dark-bgDark-bgx2.jpg);}
-    
-}
+ 
    @media screen and (min-width:320px ) and (max-width:767.98px ){
         .adres {
          display: none;
@@ -840,7 +853,9 @@ color: #ffffff;
         .model-windows{
             width: 288px;
         }
-
+        .header{
+            padding: 16px 0;
+        }
         .model-windows-div{
             width: 100%;
         }
@@ -971,12 +986,11 @@ color: #ffffff;
            
             .section-one{
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx1.jpg); max-width: 320px;}
-            
+            @media only screen and (min-resolution: 192dpi ){
+                .section-one{
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/darkx2.jpg);}
+            }
     }
-    @media only screen and (min-resolution: 192dpi ){
-            .section-one{
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/max-with-320/Dark-bgx2.jpg);}
-        }
     @media screen and (max-width: 320px){
         .adres {
             display: none;
@@ -992,7 +1006,7 @@ color: #ffffff;
         display: none;
      }
      .advantages-section{
-        width: 100%;
+        padding: 96px 0;
      }
     }
     @media screen and (max-width:320px ){
@@ -1044,7 +1058,7 @@ color: #ffffff;
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-top: 48px;
+    margin-top: 48px;
    }
    .mob-link-na{
     font-family: Roboto;
@@ -1078,7 +1092,6 @@ color: #ffffff;
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-left: 16px;
    }
    .mob-li{
     margin: 0;
@@ -1093,6 +1106,8 @@ color: #ffffff;
     display: flex;
     padding: 0;
     gap: 40px;
+    margin: 0;
+    margin-top: 16px;
    }
    .button-header{
     background-color: unset;
